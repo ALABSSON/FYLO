@@ -171,7 +171,6 @@
     height: 500px;
     width: 100%;
     padding: 20px;
-    background-color: red;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -191,60 +190,78 @@
 
 .bodydiv3text h1{
     width:400px;
+    color: rgb(255, 255, 255);
 }
 
 .bodydiv3text p{
+    color: rgb(255, 255, 255);
     width:550px;
     margin-top: 20px;
 }
 
 .bodydiv3text a{
     margin-top: 20px;
-    color:hsl(176, 68%, 64%);
+    color:rgb(66, 184, 176);
     text-decoration:none;
-    border-bottom:1px solid hsl(176, 68%, 64%);
+    border-bottom:1px solid rgb(66, 184, 176);
     padding-bottom:5px;
     cursor:pointer;
 }
 
 .bodydiv3text a:hover{
-    color:hsl(176, 61%, 81%);
-    border-bottom:1px solid hsl(176, 61%, 81%);
+    color:#B1ECE8;
+    border-bottom:1px solid #B1ECE8;
     font-weight:700;
 }
 
-.bodydiv3text img{
-    position:relative;
-    transform:scale(.8);
-    margin-bottom:-4px;
-}
 
-.section4{
-    width:100%;
-    padding-top:150px;
-    display:inline-flex;
+.bodydiv4{
+    width: 100%;
+    height: 300px;
+    padding-top: 150px;
+    display: flex;
     justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
 }
 
-.quote-cards{
-    display:inline-grid;
-    grid-template-columns: 310px 310px 310px;
-    grid-column-gap: 40px;
-    grid-template-rows: 200px;
-    text-align:left;
+.quotation{
+    width: 100%;
+    margin-left: 90px;
+    margin-bottom: -20px;
+    display: flex; 
+}
+
+.in-bodydiv4{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
     color:hsl(0, 0%, 100%);
-    font-weight:200;
-    margin-bottom:150px;
+    font-weight: 200;
+    padding: 20px;
+
 }
 
-.card{
-    background-color:hsl(219, 30%, 18%);
-    padding:30px;
-    font-size:.75em;
-    z-index:2;
+.profile{
+    width: 30%;
+    height: 100%;
+    background-color:#202A3C;
+    padding: 30px;
+    cursor: pointer;
+    transition: all 350ms;
+    transform: scale(1);
 }
 
-.profile-pic{
+.profile:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.277);
+
+}
+
+.profile img{
     margin-right:10px;
     margin-top:20px;
     height:30px;
@@ -252,23 +269,16 @@
     float:left;
 }
 
-h5{
+.profile h5{
     margin-top:35px;
 }
 
-h6{
+.profile h6{
     margin-left:40px;
-    margin-top:-12px;
     font-weight:200;
 }
 
-#quotation{
-    position:absolute;
-    margin-left:20px;
-    z-index:1;
-    margin-left:-10px;
-    margin-top:-35px;
-}
+
 
 .section5{
     width:100%;
