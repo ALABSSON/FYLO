@@ -1,188 +1,219 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;400;700&family=Raleway:wght@400;700&display=swap'); /*font-family: 'Raleway', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;400;700&family=Raleway:wght@400;700&display=swap');
 
-/*- Dark Blue (intro and email sign up background): hsl(217, 28%, 15%)
-- Dark Blue (main background): hsl(218, 28%, 13%)
-- Dark Blue (footer background): hsl(216, 53%, 9%)
-- Dark Blue (testimonials background): hsl(219, 30%, 18%)*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 
-body{
+.bodydiv{
+    width: 100%;
+    height: max-content;
+    background: #1B2230;
     font-family: 'Open Sans', sans-serif;
-    background-image:linear-gradient(hsl(218, 28%, 15%),hsl(217, 28%, 13%));
-    font-size:14px;
-
+    font-size: 14px;
 }
 
 .navbar{
-    background-color:transparent;
-    display:flex;
-    flex-direction:row;
-    box-sizing: border-box;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    padding:50px 50px;
+    justify-content: space-between;
+
     
 }
 
-.right-nav{
-    margin-left: auto;
-}
-.right-nav a{
-    color:white;
-    list-style-type:none;
-    text-decoration:none;
-    padding:30px 30px;
-    display:inline-block;
+.toplogo{
+    margin-left: 100px;
 }
 
-.right-nav a:hover{
-    color:hsl(176, 68%, 64%);
+.rightnav{
+   display: flex;
+   margin-right: 100px;
 }
 
-.content{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction:column;
-    text-align:center;
+.rightnav li{
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+.rightnav a{
+    color: white;
+    text-decoration: none;
+}
+
+.rightnav a:hover{
+    color: #6AC3C1;
+}
+
+.maincontent{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 
-.section1{
+.bodydiv1{
     margin-top:50px;
     width:100%;
     display:flex;
     justify-content: center;
     align-items:center;
     flex-direction:column;  
-    z-index:1;
-
+    
 }
 
-h1{
-    width:800px;
-    color:hsl(0, 0%, 100%);
-    font-family: 'Raleway', sans-serif;
-    font-size:3em;
-    line-height:1.5em;
-}
-
-h2{
-    width:650px;
-    color:hsl(0, 0%, 100%);
-    font-size:1.5em;
-    font-weight:400;
-    line-height:1.5em;
-}
-
-.get-started{
-    width:300px;
-    height:60px;
-    border-radius:50px;
-    border:none;
-    background-image:linear-gradient(to right, hsl(176, 68%, 64%),hsl(198, 60%, 50%));
-    color:white;
-    font-family: 'Raleway', sans-serif;
-    font-weight:700;
-    font-size:1.25em;
-    margin-top:20px;
-    cursor:pointer;
-    box-shadow:0px 1px 1px 1px hsl(198, 60%, 50%);
-}
-.section1 img{
-    z-index:1;
+.bodydiv1 img{
     padding-bottom:50px;
 }
 
-.get-started:hover{
-    background-image:linear-gradient(to left, hsl(176, 68%, 64%),hsl(198, 60%, 50%));
-}
-
-.mountain{
+.innerbodydiv1{
+    width:100%;
     display:flex;
     justify-content:center;
     align-items:center;
     flex-direction:column;
-    width:100%;
-    background-image: url("https://raw.githubusercontent.com/hammercait/fylo-dark-theme-landing-page/658fd0afb4462e6a7e94996ab981bb7d5b336997/images/bg-curvy-desktop.svg");
-    background-position:center bottom;
-    background-size:cover;
-    background-repeat:no-repeat;
-    z-index:2;
-    padding-top:350px;
-}
-
-.mountain-words{
-    position:relative;
-    margin-top:-100px;
+    margin-top:200px;
 }
 
 
-.section2{
+.innerbodydiv1 h1{
+    width: 800px;
+    color:white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height:63px;
+}
+
+.innerbodydiv1 h2{
+    width: 650px;
+    color:white;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 31.5px;
+}
+
+.btn{
+    width: 300px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    background-image: linear-gradient(to left, #6AC3C1,#559EB8);
+    color:white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 17.5px;
+    margin-top: 20px;
+    cursor: pointer;
+  
+}
+
+.btn:hover{
+    background-image:linear-gradient(to right, #6AC3C1,#559EB8);
+}
+
+
+.bodydiv2{
+    height: 700px;
     width:100%;
-    background-color:hsl(217, 28%, 13%);
-    padding-top:150px;
+    padding-top:60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 }
 
-.features{
-    display:inline-grid;
-    grid-template-columns: 425px 425px;
-    grid-column-gap: 120px;
-    grid-row-gap:60px;
-    grid-template-rows: 300px 300px;
+.inbodydiv2{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    
 }
 
-.features img{
+.bodydiv2content{
+    width: 35%;
+    height: 100%;
+}
+
+.bodydiv2content img{
     height:100px;
 }
 
-h3{
-    color:hsl(0, 0%, 100%);
-    font-size:1.5em;
+.bodydiv2content h3{
+    font-family: "Open Sans", sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 21px;
+    font-weight: 700;
+    line-height: normal;
 }
 
-p{
-    color:hsl(0, 0%, 100%);
-    font-size:1.1em;
-    line-height:1.5em;
+.bodydiv2content p{
+    font-family: "Open Sans", sans-serif;
+    color:rgb(255, 255, 255);
+    font-size: 15.4px;
+    line-height: 23.1px;
     font-weight:400;
 }
 
-.section3{
-    width:100%;
-    padding-top:100px;
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
+
+.bodydiv3{
+    height: 500px;
+    width: 100%;
+    padding: 20px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.sec3text{
-    text-align:left;
+.bodydiv3 img{
+    height: 400px;
+}
+
+.bodydiv3text{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
     margin-left:50px;
 }
 
-.sec3text h1{
+.bodydiv3text h1{
     width:400px;
 }
 
-.sec3text p{
+.bodydiv3text p{
     width:550px;
+    margin-top: 20px;
 }
 
-.sec3text a{
+.bodydiv3text a{
+    margin-top: 20px;
     color:hsl(176, 68%, 64%);
     text-decoration:none;
     border-bottom:1px solid hsl(176, 68%, 64%);
     padding-bottom:5px;
     cursor:pointer;
 }
-.sec3text a:hover{
+
+.bodydiv3text a:hover{
     color:hsl(176, 61%, 81%);
     border-bottom:1px solid hsl(176, 61%, 81%);
     font-weight:700;
 }
 
-.sec3text img{
+.bodydiv3text img{
     position:relative;
     transform:scale(.8);
     margin-bottom:-4px;
