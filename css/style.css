@@ -19,7 +19,7 @@
     height: 200px;
     width: 100%;
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     align-items: center;
     justify-content: space-between;
 
@@ -227,10 +227,10 @@
 }
 
 .quotation{
-    width: 100%;
-    margin-left: 90px;
+    width: 95%;
     margin-bottom: -20px;
     display: flex; 
+    justify-content: flex-start;
 }
 
 .in-bodydiv4{
@@ -280,7 +280,7 @@
 
 
 
-.section5{
+.bodydiv5{
     width:100%;
     display:flex;
     justify-content: center;
@@ -289,155 +289,171 @@
     padding-top:150px;
 }
 
-.contact-box{
-    position:absolute;;
-    width:800px;
-    height:250px;
-    background-color:hsl(217, 28%, 15%);
-    border-radius:5px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    z-index:2;
-    box-shadow:5px 5px 5px hsl(222, 31%, 11%);
-    margin-top:50px;
+.in-bodydiv5{
+    width: 700px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px #121825;
+    color: white;
+    position: absolute;
+    background-color:#1C2431;
+    border-radius: 10px;
+    
 }
 
-.contact-box h1{
-    font-size:2em;
-    margin-top:-10px;
+.in-bodydiv5 h1{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    
 }
 
-.contact-box p{
-    font-size:.8em;
-    width:500px;
+.in-bodydiv5 p{
+    font-size: 13.2px;
+    font-weight: 400;
+    width: 500px;
     margin-bottom:20px;
 }
 
-#email{
-    width:350px;
-    height:30px;
-    border-radius:50px;
-    border:none;
-    padding-left:30px;
-    font-size:.75em;
-
+.email{
+    width: 350px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    padding-left: 20px;
+    font-size: 14.5px;
+    outline: none;
+    margin-top: 20px;
 }
 
-#submit{
-    width:150px;
-    height:30px;
-    border-radius:50px;
-    border:none;
-    background-image:linear-gradient(to right, hsl(176, 68%, 64%),hsl(198, 60%, 50%));
+.submit{
+    width: 200px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(to left, hsl(176, 68%, 64%),hsl(198, 60%, 50%));
     color:white;
-    font-family: 'Raleway', sans-serif;
-    font-weight:700;
-    font-size:.75em;
-    margin-top:20px;
-    cursor:pointer;
-    margin-left:20px;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 10.5px;
+    cursor: pointer;
+    margin-left: 25px;
 }
 
-#submit:hover{
-    background-image:linear-gradient(to left, hsl(176, 68%, 64%),hsl(198, 60%, 50%));
+.submit:hover{
+    background: linear-gradient(to right, hsl(176, 68%, 64%),hsl(198, 60%, 50%));
 }
 
 
 
-footer{
-    background-color:hsl(216, 53%, 9%);
-    margin-top:30px;
-    box-sizing: border-box;
-    height:500px;
-    display:flex;
-    flex-direction:row;
+.bodydiv6{
+    width: 100%;
+    margin-top: 20px;
+    height: 400px;
+    display: flex;
     align-items: center;
-    justify-content:center;
-    z-index:1;
+    justify-content: center;
+
 }
 
-.left p{
-    width:300px;
-    font-size:1em;
-    margin-top:30px;
-    margin-left:20px;
+.first-in-div6{
+    margin-left: 50px;
 }
 
-.left2{
-    display:flex;
-    justify-content:center;
-    align-items:center;
+.first-in-div6 img{
+    height: 50px;
 }
 
-.contact{
-    width:200px;
-    display:flex;
-    justify-content:center;
-    align-items:start;
-    flex-direction:column;
-    margin-left:100px;
-    margin-top:75px;
+
+.second-in-div6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
-.contact div{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    margin-top:-10px;
+.second-in-div6 p{
+    width: 300px;
+    font-size: 14px;
+    margin-top: 30px;
+    margin-left: 20px;
+    line-height: 20px;
+}
+
+
+.Telephone{
+    width: 200px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin-left: 100px;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+.in-Telephone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
     
 }
-.contact p{
-    margin-left:20px;
+.in-Telephone p{
+    margin-left: 20px;
+    color: white;
 }
 
 
 .info{
-    padding:0;
-	margin:0;
-    display:inline-grid;
-    width:400px;
-    grid-template-columns: 150px 150px;
-    grid-template-rows:35px 35px 35px 35px;
-    margin-left:100px;
-    margin-top:130px;
+    display: flex;
+    width: 100px;
+    flex-direction: column;
+    margin-left: 80px;
+    margin-top: 100px;
 }
+
 .info li{
-    list-style-type:none;
+    list-style-type: none;
     cursor: pointer;
-    color:var(--dk-grey-blue);
-    color:hsl(0, 0%, 100%);
+    color: white;
+    margin-top: 10px;
 }
 
 .info li:hover{
-    color:hsl(176, 68%, 64%);
+    color:rgb(101, 226, 217);
 }
 
 
-.social{
-    padding:0;
-    display:grid;
-    grid-template-columns: 35px 35px 35px;
-    grid-template-rows:35px;
-    grid-gap:10px;
-    margin-top:25px;
+
+
+.social-div{
+    width: 200px;
+    height: 80px;
+    margin-right: 50px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.social li{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    list-style-type:none;
-    cursor: pointer;
-    font-size:1.5em;
-    color:hsl(0, 0%, 100%);
-    border:1px solid hsl(0, 0%, 100%);
-    border-radius:50%;
+.circle{
+    height: 50px;
+    width: 50px;
+    background: white;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-.social li:hover{
-    color:hsl(176, 68%, 64%);
-    border:1px solid hsl(176, 68%, 64%);
+.circle img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+
 }
 
